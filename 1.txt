@@ -14,3 +14,37 @@ grep -E "https?://[a-zA-Z0-9\.\/_&=@$%?~#-]*" -r wudawei --color=auto
 ---------------------------------------------------------------------------------------
 dig axfr @ns1.target.com target.com
 dig ns target.com
+---------------------------------------------------
+Remove images, CSS, JS
+cat urls.txt | grep -ivE "\.(png|jpeg|css|js|woff2|svg)(\?|$)" > filtered.txt
+
+API Routes:
+grep -iE "api|v1|v2|graphql|rest|json" filtered.txt
+
+Parameters:
+grep -iE "\?[a-z]+=" filtered.txt
+
+Sensitive File Extensions:
+grep -iE "\.(php|asp|aspx|jsp|bak|old|swp|sql)" filtered.txt
+
+Deduplication
+cat filtered.txt | urldedupe -s -u > deduped.txt
+
+grep -iE "search|query|name=" deduped.txt
+
+File Inclusion:
+grep -i "file=" deduped.txt | qsreplace "/etc/passwd"
+
+Auth Endpoints: /login, /oauth, /reset-password.
+
+grep -E "id=\d+" deduped.txt
+
+Long Parameters: ?q=verylongstring might indicate JWT or encrypted data.
+
+Debug Flags: Look for debug=true or test=1 in URLs.
+
+
+
+
+
+
