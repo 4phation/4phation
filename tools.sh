@@ -27,6 +27,10 @@ go install github.com/d3mondev/puredns/v2@latest
 go install github.com/ffuf/ffuf/v2@latest
 go install github.com/gwen001/github-subdomains@latest
 go install github.com/OJ/gobuster/v3@latest
+go install github.com/hakluke/hakrawler@latest
+CGO_ENABLED=1 go install github.com/projectdiscovery/katana/cmd/katana@latest
+GO111MODULE=on go install github.com/jaeles-project/gospider@latest
+
 
 
 
