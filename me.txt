@@ -1,2 +1,3 @@
 https://downrightnifty.me/blog/2022/12/26/hacking-google-home.html
 https://miro.medium.com/v2/resize:fit:4800/format:webp/0*vbx0m8SLA9Yjns4N.png
+https://github.com/blechschmidt/massdns
