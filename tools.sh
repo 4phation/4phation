@@ -1,4 +1,4 @@
-apt install masscan nikto sqlmap whatweb nmap libpcap-dev 
+apt install masscan nikto sqlmap whatweb nmap libpcap-dev dirb hydra
 
 wget https://go.dev/dl/go1.21.4.linux-amd64.tar.gz
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.21.4.linux-amd64.tar.gz
@@ -10,6 +10,7 @@ git clone https://github.com/maurosoria/dirsearch.git
 git clone https://github.com/aboul3la/Sublist3r.git sublist3r
 git clone https://github.com/shmilylty/OneForAll.git
 git clone https://github.com/appsecco/the-art-of-subdomain-enumeration.git
+git clone git clone https://github.com/r0oth3x49/ghauri.git
 
 
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
@@ -22,6 +23,9 @@ go install -v github.com/tomnomnom/anew@latest
 go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
 go install github.com/lc/gau/v2/cmd/gau@latest
 go install github.com/tomnomnom/waybackurls@latest
+go install github.com/d3mondev/puredns/v2@latest
+go install github.com/ffuf/ffuf/v2@latest
+
 
 
 
