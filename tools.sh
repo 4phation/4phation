@@ -9,8 +9,7 @@ git clone https://github.com/guelfoweb/knock.git
 git clone https://github.com/maurosoria/dirsearch.git
 git clone https://github.com/aboul3la/Sublist3r.git sublist3r
 git clone https://github.com/shmilylty/OneForAll.git
-git clone 
-https://github.com/appsecco/the-art-of-subdomain-enumeration.git
+git clone https://github.com/appsecco/the-art-of-subdomain-enumeration.git
 
 
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
