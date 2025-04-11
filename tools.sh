@@ -1,4 +1,4 @@
-apt install masscan nikto sqlmap whatweb nmap libpcap-dev
+apt install masscan nikto sqlmap whatweb nmap libpcap-dev 
 
 wget https://go.dev/dl/go1.21.4.linux-amd64.tar.gz
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.21.4.linux-amd64.tar.gz
@@ -19,6 +19,10 @@ go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 go install  github.com/tomnomnom/assetfinder@latest
 go install -v github.com/owasp-amass/amass/v4/...@master
+go install -v github.com/tomnomnom/anew@latest
+go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+go install github.com/lc/gau/v2/cmd/gau@latest
+go install github.com/tomnomnom/waybackurls@latest
 
 
 
