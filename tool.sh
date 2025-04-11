@@ -1,7 +1,7 @@
 pipx install bbot
 pipx install uro
 pipx install arjun
-
+pip3 install py-altdns==1.0.2
 
 git clone https://github.com/devanshbatham/paramspider
 cd paramspider
