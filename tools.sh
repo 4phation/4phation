@@ -26,6 +26,7 @@ go install github.com/tomnomnom/waybackurls@latest
 go install github.com/d3mondev/puredns/v2@latest
 go install github.com/ffuf/ffuf/v2@latest
 go install github.com/gwen001/github-subdomains@latest
+go install github.com/OJ/gobuster/v3@latest
 
 
 
