@@ -6,3 +6,6 @@ https://search.censys.io/
 https://fofa.info/
 https://www.shodan.io/
 https://www.zoomeye.ai/
+https://subdomainfinder.c99.nl/
+
+dig A example.com +short
