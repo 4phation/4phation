@@ -12,7 +12,7 @@ git clone https://github.com/shmilylty/OneForAll.git
 git clone https://github.com/appsecco/the-art-of-subdomain-enumeration.git
 git clone git clone https://github.com/r0oth3x49/ghauri.git
 
-
+go install github.com/tomnomnom/qsreplace@latest
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
