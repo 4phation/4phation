@@ -3,3 +3,6 @@
 2. Enter this value: explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9}
 3. Tick the Always show all icons and notifications on the taskbar checkbox.
 4. Click the OK button.
+
+
+aws s3 ls s3://xpay-prod/  --no-sign-request --recursive
