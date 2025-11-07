@@ -1,1 +1,25 @@
+subfinder
+naabu
+katana
+uncover
+asnmap
+shuffledns
+dnsx
+tlsx
+httpx
+vulnx
 
+amass enum -brute -min-for-recursive 2 -d baidu.com
+amass enum -d baidu.com
+  intel  收集开源情报
+  enum   对于暴漏的系统执行dns枚举和网络映射
+  db    管理存储枚举的数据库
+amass enum -d baidu.com
+amass enum -active -d baidu.com -p 80,8080,8000
+amass enum --passive -d baidu.com
+amass enum -brute -d baidu.com
+amass enum -d baidu.com -src -ip 
+
+./amas intel -org “google”
+./amass intel -active -asn 15169
+amass enum -v -src -ip -brute -min-for-recursive 2 -d example.com
